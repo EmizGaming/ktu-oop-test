@@ -1,0 +1,8 @@
+﻿Parduotuve1
+Gedimino g. 70
+875202563
+Kettle;LG;Lol33;650;A+;Pastatomas;Baltas;true;30;670
+Kettle;LG;E53;6240;A++;Įmontuojamas;Baltas;true;1560;860
+Kettle;Samsuk;L20;350;A+;Pastatomas;Juodas;false;600;610
+Oven;Samsun;L174;800;A+;Pastatomas;Sidabrinis;true;12;600;5
+Fridge;Samsung;L74;400;A+;Pastatomas;Sidabrinis;true;10;300;54;50

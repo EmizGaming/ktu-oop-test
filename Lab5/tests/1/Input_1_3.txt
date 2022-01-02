@@ -1,0 +1,13 @@
+﻿Parduotuve3
+Petro g. 7
+8671234853
+Kettle;LG;Lol33;650;A++;Pastatomas;Baltas;true;150;600
+Kettle;LG;E53;6240;A++;Įmontuojamas;Baltas;true;1560;800
+Kettle;Samsuk;L20;350;A+;Pastatomas;Juodas;false;600;600
+Oven;Samsun;L174;800;A;Pastatomas;Sidabrinis;true;1570;600;5
+Fridge;Samsung;L74;400;A+;Pastatomas;Sidabrinis;true;100;300;200;50
+Fridge;Samsung;L30;495;A++;Pastatomas;Sidabrinis;true;1700;200;800;60
+Oven;Beko;AF87;550;A++;Įmontuojamas;Baltas;true;200;300;8
+Fridge;Beko;AE77;600;B;Pastatomas;Baltas;false;300;300;500;180
+Fridge;Aego;B78;800;A++;Pastatomas;Baltas;true;110;185;135;145
+Oven;Aegos;B784;8000;A++;Pastatomas;Baltas;true;120;500;2
