@@ -4,7 +4,7 @@ env:
   ASSIGNMENT_ID: -1
   MOODLE_FILENAME: IF-1-2_Emilijus_Bobby.pdf
   CONFIG_FILENAME: report.toml
-  DOTNET_VERSION: 4.7.2
+  DOTNET_VERSION: 3.0.103
 
 on:
   workflow_dispatch:
