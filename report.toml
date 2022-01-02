@@ -1,0 +1,13 @@
+title = "Objektinis programavimas I (P175B118)"
+
+student = { name = "Studento Bob Bobby BB-1/2", gender = "male" }
+lecturer = { name = "lekt. Alice Alison", gender = "female" }
+
+tests_folder = "tests"
+
+[[sections]]
+title = "Lorem ipsum"
+problem = """
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+"""
+

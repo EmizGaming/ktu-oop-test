@@ -1,0 +1,46 @@
+name: Generate and upload report to KTU Moodle
+
+env:
+  ASSIGNMENT_ID: -1
+  MOODLE_FILENAME: BB-1-2_Bob_Bobby.pdf
+  CONFIG_FILENAME: report.toml
+  DOTNET_VERSION: 3.0.103
+
+on:
+  workflow_dispatch:
+  # push:
+  #   branches: [ main ]
+  #   paths:
+  #     - 'report.toml' # This should be the same as CONFIG_FILENAME
+  #     - 'path/to/project/used/in/report/**'
+  #     - 'another/path/if/for/another/project/**'
+
+jobs:
+  generate-and-upload:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+ 
+    - name: Generate report
+      uses: RokasPuzonas/ktu-oop-report-generator@v1.0.4
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+        config-filename: ${{ env.CONFIG_FILENAME }}
+        output-filename: report.pdf
+
+    - name: Archive report
+      uses: actions/upload-artifact@v2
+      with:
+        name: report
+        path: report.pdf
+
+    - name: Upload report to moodle
+      uses: RokasPuzonas/ktu-moodle-assignment-upload@v1.0.3
+      with:
+        assignment-id: ${{ env.ASSIGNMENT_ID }}
+        target-filename: report.pdf
+        upload-filename: ${{ env.MOODLE_FILENAME }}
+        ktu-username: ${{ secrets.KTU_USERNAME }}
+        ktu-password: ${{ secrets.KTU_PASSWORD }}
+
